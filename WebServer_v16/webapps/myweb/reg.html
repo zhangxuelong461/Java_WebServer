@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+	</head>
+	<body>
+		<center>
+			<h1>欢迎注册</h1>
+			<!-- 
+				form表单，用来将用户在页面上输入的信息提交给服务端。
+				只有被form标签包含的输入框输入的内容才会被提交
+				form有两个属性：
+					action：用于指定表单提交的路径，这个路径需要服务端配合，根据请求完成后续业务处理
+					method：用于指定表单提交的方式，两种：GET,POST,不写默认为GET请求
+			 -->
+			<form action="./reg">
+				<table border="1">
+				<tr>
+					<td>用户名</td>
+					<td><input name="username" type="text"></td>
+				</tr>
+				<tr>
+					<td>密码</td>
+					<td><input name="password" type="password"></td>
+				</tr>
+				<tr>
+					<td>昵称</td>
+					<td><input name="nick" type="text"></td>
+				</tr>
+				<tr>
+					<td>年龄</td>
+					<td><input name="age" type="text"></td>
+				</tr>
+			</table>
+			<input type="submit" value="注册">
+			</form>
+		</center>
+	</body>
+</html>
